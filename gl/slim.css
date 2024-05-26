@@ -1,0 +1,50 @@
+html,
+body {
+  font: 100% 'Helvetica Neue', 'Helvetica', 'Liberation Sans', sans-serif;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  flex-direction: column;
+  min-height: 100vh;
+}
+body > * {
+  display: flex;
+  flex-direction: row;
+}
+body > header {
+  background: hsl(0, 0%, 12%);
+  flex: 0 0.2rem;
+}
+body > main {
+  flex: 1;
+}
+body > main > div {
+  flex: 1;
+}
+body > main > aside {
+  flex: 72ch 0;
+}
+body > main[pristine] > div {
+  background: hsl(0, 0%, 90%);
+}
+body > main[pristine] > aside {
+  background: hsl(70, 8%, 15%);
+}
+body > footer {
+  color: hsl(0, 0%, 77%);
+  background: hsl(0, 0%, 8%);
+  flex: 0 2.4rem;
+}
+body > footer > div {
+  flex: 1;
+}
+body > footer > p {
+  font-size: 0.8rem;
+  font-weight: 200;
+  letter-spacing: 0.125rem;
+  margin: auto 1rem;
+}
